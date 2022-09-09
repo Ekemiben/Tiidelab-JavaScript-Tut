@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Script</title>
+</head>
+<body>
+
+    <h3 id="display"></h3>
+
+    <script>
+        // function addFunc(num){
+        //     let anotherfunc = num * 3
+        // }
+
+
+        // function calculate(){
+        //     let cal = 3+4;
+
+        //     return addFunc(cal)
+        // }
+        // calculate()
+
+        // function display(some){
+        //     let mul = some *3 
+        //     let eplay = document.getElementById("display").innerHTML = mul 
+
+        // }
+
+        // function calculator(num1, num2){
+        //     let sum = num1 * num2
+        //     return sum
+        // }
+        // let result = calculator(5,5)
+        // display(result)
+
+
+        function display2(some){
+            let mul = some *3 
+            let eplay = document.getElementById("display").innerHTML = mul 
+
+        }
+
+        function calculator2(num1, num2, myCallback){
+            let sum = num1 * num2
+            
+            myCallback(sum)
+        }
+        let result = calculator2(5, 5, display2)
+        
+    </script>
+</body>
+</html>

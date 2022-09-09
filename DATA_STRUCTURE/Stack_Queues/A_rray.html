@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class Node{
+            constructor(anyValue){
+                this.value = anyValue;
+                this.next = null;
+            }
+        }
+       
+        class Stack{
+            contructor(){
+                this.array = [];
+
+            }
+            peek(){
+                return this.array[this.array.length-1]
+            }
+            push(value){
+                this.array.push(value)
+                return this;
+            }
+            pop(){
+                this.array.pop()
+                return this;
+            }
+        }
+
+        const myStack = new Stack()
+        myStack.push("Google")
+        // myStack.push("Udemy")
+        // myStack.push("Flirt")
+        
+        // myStack.peek()
+        // myStack.pop()
+        
+
+        console.log(myStack)
+    </script>
+</body>
+</html>

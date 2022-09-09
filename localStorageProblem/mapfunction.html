@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mapin"></p>
+    <script>
+        
+        let empty ="";
+        let fruit = new Map([["Orange", 10], ["Mango", 20],[ "Papaw", 30]])
+        fruit.set("peers", 70)
+        for(let x of fruit){
+            empty += x + "<br>"
+        }
+        
+        let x = document.getElementById("mapin");
+        x.innerHTML = empty
+        // To get Map value use the get method example bellow
+        // let v = document.getElementById("mapin").innerHTML = fruit.get("peers")
+
+        
+    </script>
+</body>
+</html>

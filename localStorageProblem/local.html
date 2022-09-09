@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset id="frm">
+        
+    
+    <!-- <form action=""  onsubmit="event()"> -->
+        <p id="code" class="my-code">Hello! you are coding</p>
+        <p id="code1" class="my-code">Is time for coding</p>
+        <p id="code2" class="my-code">I'm now expert in coding</p>
+        <p id="code3" class="my-code">You can lean from me</p>
+        <p id="code4" class="my-code">I will treat you well</p>
+        <button id="btn" >On</button>
+        <input type="color" id="colorchanger">
+        <input type="button" onclick="colourchanger()" id="bgchange" value="Change Background Color">
+    </fieldset>
+    
+    <!-- <fieldset>
+        <legend>Insert Data</legend>
+        <input type="text" id="firstname" placeholder="Firtname">
+        <input type="text" id="lastname" placeholder="Lastname">
+        <button id="btninsert">Save</button>
+    </fieldset>
+
+<fieldset>
+    <legend>Local Storage</legend>
+    <div id="output"></div>
+</fieldset> -->
+    <!-- <script>
+        const Firstname = document.getElementById("firstname");
+        const Lastname = document.getElementById("lastname");
+        const btninput = document.getElementById("btninsert");
+        const output = document.getElementById("output")
+    </script> -->
+
+    <script>
+        let code = document.getElementById("code")
+        console.log(code)
+        let classes = document.querySelectorAll(".my-code")
+        console.log(classes)
+
+
+        let btnclick = document.getElementById("btn").onclick = function(){
+            let btn = document.getElementById("btn").innerHTML = "Off"
+            // if(!btn.innerHTML == "Off"){
+            //     btn.innerHTML = "Of"
+            // }else
+            if(btn.innerHTML == "Off"){
+                
+                btn = document.getElementById("btn").innerHTML = onbtnclick
+            }
+        }
+        // let onbtnclick = document.getElementById("btn").onclick = function(){
+        //     let btn = document.getElementById("btn").innerHTML = "On"
+        //     // btn = document.getElementById("btn").innerHTML ="On"
+        // }
+
+        function colourchanger(e){
+            event.defaultPrevented
+            let color = document.getElementById("colorchanger").value;
+            let bodyform = document.getElementById("frm");
+            bodyform.style.maxWidth = "40%"
+            bodyform.style.position = "relative"
+            bodyform.style.left = "20%"
+            bodyform.style.color = "white";
+            bodyform.style.backgroundColor = color;
+            let btnchange = document.getElementById("bgchange").style.backgroundColor = color;
+            
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+<table>
+    <tr>
+        <td>
+            <form action="" onsubmit="event.preventDefault()" autocomplete="on">
+                <div>
+                    <label for="">Full Name</label>
+                    <input type="text" name="fullname" id="fname">
+                </div>
+                <div>
+                    <label for="">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div>
+                    <label for="">Phone Number</label>
+                    <input type="tel" name="number" id="phon_number">
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <input type="submit" onclick="onformSubmit()" value="Submit">
+                    
+                </div>
+            </form>
+        </td>
+        <!-- Table to list all the records -->
+        <table class="list" id="personal-details"> 
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Password</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </tr>
+</table>
+
+    <script src="crud.js"></script>
+</body>
+</html>

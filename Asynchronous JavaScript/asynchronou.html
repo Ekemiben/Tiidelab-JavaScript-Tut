@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="asin"></p>
+    <p id="new"></p>
+    <script>
+        setTimeout(function(){
+            myFunction()}, 5000);
+
+        function   myFunction(value){
+            value = "Hello! this is testing"
+               x =  document.getElementById("asin").innerHTML = value
+            }
+
+        setInterval(myFunctn, 2000)
+
+        function myFunctn(){
+            let dparam = new Date()
+            document.getElementById("new").innerHTML = 
+            dparam.getHours() + ":" +
+            dparam.getMinutes() + ":" +
+            dparam.getSeconds()
+        }
+
+    </script>
+</body>
+</html>

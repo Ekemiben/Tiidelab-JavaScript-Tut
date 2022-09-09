@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtadd" name="text">
+    <button id="add" onclick="addnew()">Addnew</button>
+    <h3 id="output"></h3>
+
+    <br>
+    <table>
+        <tr>
+            <thead>
+                <td>Name</td>
+                <td>City</td>
+            </thead>
+        </tr>
+
+        <tr>
+            <td id="name">Ben</td>
+            <td id="city">Abuja</td>
+        </tr>
+
+    </table>
+
+    <script>
+         let fruits = ["Apple","Banana"]
+        let text = document.getElementById("txtadd").innerHTML = fruits
+       
+
+        function addnew(){
+           
+            let text = document.getElementById("txtadd").value
+            fruits[fruits.length] = text
+            let outPut = document.getElementById("output").innerHTML = text
+            console.log(fruits)   
+        }
+        function addToTable(){
+            let person = {}   
+        }
+
+    </script>
+</body>
+</html>

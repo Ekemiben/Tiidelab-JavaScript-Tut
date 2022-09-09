@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class linkList{
+        //      
+        //     head: {
+        //         value: 10,
+        //         next:{ 
+        //             value: 20,
+        //             next:{
+        //                 value:30,
+        //                 next: null
+
+                        
+        //             } 
+
+        //         }
+        //     }
+        // }
+        class Node {
+            constructor(value){
+                
+                    value: value;
+                    next: null;
+                
+            }
+        }
+
+        class LinkedList{
+            constructor(value){
+                this.head = {
+                    value: value,
+                    next:null
+                };
+                this.tail = this.head;
+                this.length = 1
+            }
+            append(number){
+                const newNode = new Node(value);
+                this.tail.next = newNode;
+                this.tail = newNode;
+                this.length++
+                
+            }
+            append(numberTwo){
+                const newNode = new Node(value);
+                this.tail.next =newNode;
+                this.tail = newNode;
+                this.length++
+            }
+
+            prepend(addAtTheBegining){
+                const newNode = new Node(value);
+                newNode3.next = this.head;
+                this.head = newNode3
+                this.length++
+                return this
+            }
+        }
+
+        const mylinkedlist = new LinkedList(10);
+        console.log(mylinkedlist)
+        const appendMethod = mylinkedlist.append(20);
+        const appendMethod2 = mylinkedlist.append(30);
+        const prepend = mylinkedlist.prepend(5);
+        console.log(appendMethod)
+        console.log(appendMethod2)
+        console.log(prepend)
+    </script>
+</body>
+</html>

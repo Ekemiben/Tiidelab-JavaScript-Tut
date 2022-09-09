@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+       <form action="">
+        <input type="text" name="text" id="txt" placeholder="Type here">
+        <input type="text" name="text" id="txtsearch" placeholder="Search">
+        <input type="button" value="Search" onclick="txtFunction()">
+       </form>
+    </div>
+    <script>
+        function txtFunction(){
+
+            let reg = document.getElementById("txt").innerHTML;
+
+            let txtsearch = document.getElementById("txtsearch").innerHTML = reg.toString()
+            console.log(textsearch)
+
+        }
+        
+
+
+        // let search = reg.search(document.getElementById("txtsearch").innerHTML)
+        
+
+        // Event Listerner
+
+        function textsearch(){
+
+        }
+
+    </script>
+</body>
+</html>

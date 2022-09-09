@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+
+            // Method
+            age(x){
+                
+                return x - this.year;
+            }
+        }
+
+        let date = new Date();
+        let year = date.getFullYear();
+
+        let myCar = new car("this.name, this.year", 2014)
+        console.log(myCar.age(year))
+        console.log(myCar.name)
+    </script>
+</body>
+</html>

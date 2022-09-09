@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Node{
+            constructor(anyValue){
+                this.value = anyValue;
+                this.next = null;
+            }
+        }
+
+        class Stack{
+            constructor(){
+                this.top =null;
+                this.bottom = null;
+                this.length = 0;
+
+            }
+
+            peek(){
+               return this.top
+            }
+            push(value){
+                const newNode = new Node(value)
+                if(newNode === 0){
+                    this.top = newNode;
+                    this.bottom = newNode;
+
+                }else {
+                    const holdingPointer = this.top;
+                    this.top = newNode;
+                    this.top.next = holdingPointer
+                }
+                this.length++
+                return this;
+            }
+            pop(){
+                // if(this.top === null){
+                //     return null;
+                // }
+                if(! this.top){
+                    return null
+                }
+                // if(this.top === this.bottom){
+                //     return this.bottom = null
+                // }
+                const holdingPointer = this.top;
+                this.top = this.top.next;
+                this.length--
+                return holdingPointer
+
+            }
+        }
+
+
+        const myStack = new Stack()
+        myStack.push("Google")
+        myStack.push("Udemy")
+        myStack.push("Flirt")
+        
+        myStack.peek()
+        myStack.pop()
+        myStack.pop()
+        myStack.pop()
+        myStack.pop()
+
+        console.log(myStack)
+    </script>
+</body>
+</html>
